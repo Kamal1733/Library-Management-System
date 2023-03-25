@@ -1,0 +1,11 @@
+.nav-ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.navv{
+    background-color: rgb(83, 221, 231);
+   
+
+     
+}

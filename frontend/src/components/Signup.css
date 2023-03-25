@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.inp{
+    padding: 7px;
+    width: 300px;
+    margin-bottom:20px;
+    border: 1px solid skyblue;
+
+}
+button{
+    background-color: aquamarine;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+}
+ 

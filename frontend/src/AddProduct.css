@@ -1,0 +1,11 @@
+.prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spn{
+    color: red;
+    margin-top: -20px;
+    margin-left: -214px;
+    display: block;
+}
