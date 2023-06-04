@@ -1,7 +1,10 @@
 
 
-
-
+/* 
+*{
+  margin: 0px;
+  padding: 0px;
+} */
 
 
 
@@ -9,10 +12,11 @@
 .App {
   text-align: center;
     min-height: 100vh;
-   
+     
     background-image:url("https://img.freepik.com/premium-photo/modern-big-library-design-black-wooden-library-with-wooden-parquet-realistic-3d-rendering_626958-37.jpg?w=1480");
     background-size: cover;
-    background-position: center;
+    background-position: cover;
+
    
 
  

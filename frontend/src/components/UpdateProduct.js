@@ -7,6 +7,7 @@
   const [price, setPrice] = useState("");
   const [category, setCategory] = useState("");
   const [company, setCompany] = useState("");
+  const [date, setDate] = useState("");
   const params=useParams();
 
   const navigate= useNavigate();
@@ -25,6 +26,7 @@ const getProductDetails =  async ()=>{
     setPrice(result.price);
     setCategory(result.category);
     setCompany(result.company);
+    setDate(result.date);
 }
  const updateProduct =   async()=>{
     console.log(name,price,company,category)
@@ -46,7 +48,7 @@ const getProductDetails =  async ()=>{
  }
   return (
     <div className="prod">
-      <h1>Update products</h1>
+      <h1  style={{color:"white"}}>Update products</h1>
       <input
         type="text"
         placeholder="product name"
@@ -65,7 +67,7 @@ const getProductDetails =  async ()=>{
         value={price}
       />
       
-      <input
+      {/* <input
         type="text"
         placeholder="product category"
         onChange={(e) => {
@@ -82,7 +84,16 @@ const getProductDetails =  async ()=>{
         }}
         value={company}
       />
-      <button onClick={updateProduct}>Update Product</button>
+
+<input
+        type="text"
+        placeholder="product company"
+        onChange={(e) => {
+          setDate(date);
+        }}
+        value={date}
+      /> */}
+      <button onClick={updateProduct}>Update Contact</button>
     </div>
   );
 };

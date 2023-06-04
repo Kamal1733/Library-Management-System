@@ -38,7 +38,7 @@ app.post("/login", async (req, resp) => {
       Jwt.sign({ user }, jwtKey, { expiresIn: "5h" }, (error, token) => {
         if (error) {
           resp.send({
-            result: "SOmething is wrong during generaton of Jwt token",
+            result: "Something is wrong during generaton of Jwt token",
           });
         } else {
           resp.send({ user, auth: token });
@@ -69,6 +69,7 @@ app.get("/products", verifyToken, async (req, resp) => {
     resp.send({ key: "No Products found  there is no any product first add " });
   }
 });
+
 
 app.delete("/product/:id", verifyToken, async (req, resp) => {
   // resp.send(req.params.id)

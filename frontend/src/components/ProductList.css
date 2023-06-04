@@ -1,14 +1,30 @@
 .list-item  li{
-    color: blueviolet;
+    color: rgb(242, 239, 245);
     list-style-type: none;
     display: inline-block;
     border: 1px solid rgb(196, 169, 222);
     padding:  7px;
     width: 150px;
+    background-color: rgb(73, 122, 121);
 
 }
-.list-item {
-  margin: 0px;
+.list-item  {
+  margin:0px;
+
+}
+
+.list-item-data li{
+  color: rgb(242, 239, 245);
+  list-style-type: none;
+  display: inline-block;
+  border: 1px solid rgb(196, 169, 222);
+  padding:  7px;
+  width: 150px;
+  background-color: rgb(73, 122, 121);
+
+}
+.list-item-data{
+margin-top:15px;
 
 }
 .dlt-btn{

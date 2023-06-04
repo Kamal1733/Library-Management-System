@@ -10,26 +10,26 @@ const Nav = () => {
   };
   return (
     <div className="navv">
-      <h3>Library Management Sytem</h3>
+      <h3 style={{paddingTop:"15px"}}>Contact Number List</h3>
       {auth ? (
         <ul className="nav-ul">
           <li>
-            <Link to="/"> Home </Link>
+            <Link className="links"  to="/"> Home </Link>
+          </li>
+          {/* <li>
+            <Link   className="links"  to="/add"> Products </Link>
+          </li> */}
+          <li>
+            <Link  className="links"  to="/add">Create Contact</Link>
+          </li>
+          {/* <li>
+            <Link  className="links"  to="/update"> Update Data </Link>
+          </li> */}
+          <li>
+            <Link  className="links"  to="/update"> Profile </Link>
           </li>
           <li>
-            <Link to="/add"> Products </Link>
-          </li>
-          <li>
-            <Link to="/add"> Add Product </Link>
-          </li>
-          <li>
-            <Link to="/update"> Update Product </Link>
-          </li>
-          <li>
-            <Link to="/update"> Profile </Link>
-          </li>
-          <li>
-            <Link onClick={logout} to="/signup">
+            <Link  className="links"  onClick={logout} to="/signup">
               Logout
             </Link>
           </li>
@@ -37,10 +37,10 @@ const Nav = () => {
       ) : (
         <ul className="nav-ul">
           <li>
-            <Link to="/signup"> Signup</Link>
+            <Link  className="links"  to="/signup"> Signup</Link>
           </li>
           <li>
-            <Link to="/login"> Login</Link>
+            <Link   className="links" to="/login"> Login</Link>
           </li>
         </ul>
       )}

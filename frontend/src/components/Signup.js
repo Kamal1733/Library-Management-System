@@ -27,11 +27,10 @@ const Signup = () => {
     localStorage.setItem("user", JSON.stringify(result.result))
     localStorage.setItem("token", JSON.stringify(result.auth))
       navigate('/');
-  
   };
   return (
     <div className="form">
-      <h1  style={{color:"white"}}  >   Register</h1>
+      <h1  style={{color:"white"}}  > Register</h1>
       <div>
         <input
           className="inp"
